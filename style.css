@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 250px;
+  /*   background-color: black; */
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 10px 10px 22px #8c8c8c, -10px -10px 22px #ffffff;
+}
+
+.cube * {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 125px;
+  background: #ffffff;
+  box-shadow: 3px 3px 6px #8c8c8c, -3px -3px 6px #ffffff;
+}
+
+.left-one {
+  left: 20px;
+  top: 15px;
+}
+
+.left-two {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-three {
+  left: 20px;
+  bottom: 15px;
+}
+
+.middle-one {
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+}
+
+.middle-two {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-three {
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+
+.right-one {
+  right: 20px;
+  top: 15px;
+}
+
+.right-two {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-three {
+  right: 20px;
+  bottom: 15px;
+}
+
+.active {
+  background-color: black;
+}
+
+.btn-random {
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 40px;
+  font-size: 25px;
+  background-color: #fff;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #3d8ea1;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0px 4px 3px 1px rgba(168, 168, 168, 1);
+}
+
+.btn-random:hover {
+  background-color: #45a4ba;
+}
+
+.btn-random:focus {
+  outline: none;
+}
+
+.btn-random:active {
+  background-color: #45a4ba;
+  transform: translate(-50%, 2px);
+  box-shadow: 0 1px 4px 1px rgba(168, 168, 168, 1);
+}
